@@ -5,5 +5,15 @@
 	<action name="helloworld" class="ssh.action.HelloWorldAction">
 	    <result name="success">/WEB-INF/views/HelloWorld.jsp</result>
 	</action>
+	
+	<action name="register" class="ssh.action.RegisterAction">
+	    <result name="success">/WEB-INF/views/register.jsp</result>
+	</action>
+	
+	<action name="student_*" class="ssh.action.StudentAction">
+	    <result name="success">/WEB-INF/views/success.jsp</result>
+	</action>
+	
+	
 </package>
 </struts> 

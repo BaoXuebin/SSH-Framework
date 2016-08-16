@@ -5,6 +5,16 @@
     <welcome-file>welcome.html</welcome-file>
   </welcome-file-list>
   
+  <!-- Spring 框架的核心监听器 -->
+  <listener>
+      <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  
+  <context-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
+  
   <!-- Struts2 核心过滤器的配置 -->
   <filter>
       <filter-name>struts2</filter-name>
@@ -14,4 +24,5 @@
       <filter-name>struts2</filter-name>
       <url-pattern>/*</url-pattern>
   </filter-mapping>
+  
 </web-app>
